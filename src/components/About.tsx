@@ -1,4 +1,5 @@
 import { Heart, Code2, Lightbulb, GraduationCap } from "lucide-react";
+import nimiImg from "../assets/nimi.jpg";
 
 const About = () => {
   return (
@@ -13,7 +14,9 @@ const About = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section header */}
           <div className="text-center mb-16">
-            <span className="inline-block text-primary font-medium text-sm tracking-wider uppercase mb-4">About Me</span>
+            <span className="inline-block text-primary font-medium text-sm tracking-wider uppercase mb-4">
+              About Me
+            </span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">
               Nice to meet you! <Heart className="inline w-8 h-8 text-primary fill-primary" />
             </h2>
@@ -26,15 +29,24 @@ const About = () => {
                 {/* Decorative shapes */}
                 <div className="absolute -top-4 -left-4 w-full h-full bg-secondary rounded-3xl" />
                 <div className="absolute -bottom-4 -right-4 w-full h-full gradient-accent rounded-3xl" />
-                
+
                 {/* Main card */}
                 <div className="relative bg-card rounded-3xl p-8 shadow-card">
                   <div className="w-full aspect-square gradient-hero rounded-2xl flex items-center justify-center">
                     <div className="text-center">
                       <div className="w-32 h-32 mx-auto gradient-primary rounded-full flex items-center justify-center mb-4 shadow-glow">
-                        <span className="font-display text-5xl font-bold text-primary-foreground">NP</span>
+                        {/* <span className="font-display text-5xl font-bold text-primary-foreground">
+                          NP
+                        </span> */}
+                        <img
+                          src={nimiImg}
+                          alt="Nimisha Padsala"
+                          className="w-32 h-32 rounded-full"
+                        />
                       </div>
-                      <p className="font-display text-xl font-semibold text-foreground">Nimisha Padsala</p>
+                      <p className="font-display text-xl font-semibold text-foreground">
+                        Nimisha Padsala
+                      </p>
                       <p className="text-muted-foreground">Laravel Developer</p>
                     </div>
                   </div>
@@ -45,19 +57,24 @@ const About = () => {
             {/* Right side - Content */}
             <div className="space-y-6">
               <p className="text-lg text-foreground leading-relaxed">
-                I'm a detail-oriented Laravel Developer with hands-on experience in building 
-                <span className="text-primary font-medium"> scalable, secure, and high-performance</span> web applications. 
-              </p>
-              
-              <p className="text-muted-foreground leading-relaxed">
-                Skilled in PHP, Laravel framework, RESTful APIs, MySQL, and front-end technologies. 
-                I have strong problem-solving abilities with a focus on clean code, optimized performance, 
-                and seamless user experience.
+                I'm a detail-oriented Laravel Developer with hands-on experience in building
+                <span className="text-primary font-medium">
+                  {" "}
+                  scalable, secure, and high-performance
+                </span>{" "}
+                web applications.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                Passionate about learning new technologies and contributing to efficient, high-quality software solutions. 
-                I believe in writing code that not only works but is also maintainable and elegant.
+                Skilled in PHP, Laravel framework, RESTful APIs, MySQL, and front-end technologies.
+                I have strong problem-solving abilities with a focus on clean code, optimized
+                performance, and seamless user experience.
+              </p>
+
+              <p className="text-muted-foreground leading-relaxed">
+                Passionate about learning new technologies and contributing to efficient,
+                high-quality software solutions. I believe in writing code that not only works but
+                is also maintainable and elegant.
               </p>
 
               {/* Highlight cards */}
